@@ -21,7 +21,7 @@ $total_harga = 0;
 <body>
 <div class="container mt-4">
     <div class="card">
-      <div class="card-header bg-primary text-white">
+      <div class="card-header bg-dark text-white">
         <h4 class="mb-1">Manajemen Film Bioskop</h4>
         <small>Selamat datang, <b><?= htmlspecialchars($_SESSION['nama_lengkap']) ?></b> | 
             <a href="../logout.php" class="text-white text-decoration-underline">Logout</a></small>

@@ -50,10 +50,10 @@ unset($_SESSION['error']);
                     <label for="confirm_password" class="form-label">Konfirmasi Password</label>
                     <input type="password" name="confirm_password" id="confirm_password" class="form-control" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="submit" class="btn btn-dark">Register</button>
                 <a href="login.php" class="btn btn-secondary ms-2">Kembali</a>
             </form>
-            <small class="d-block mt-3 pd-15">Sudah punya akun? <a href="login.php">Login di sini</a></small>
+            <small class="d-block mt-3 pd-15">Sudah punya akun? <a href="login.php" class="link-underline-light text-dark">Login di sini</a></small>
         </div>
     </div>
 </div>

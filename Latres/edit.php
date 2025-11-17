@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 <div class="container mt-4">
   <div class="card">
-    <div class="card-header bg-primary text-white">
+    <div class="card-header bg-dark text-white">
       <h5 class="mb-1">Edit Film</h5>
       <small>Perbarui informasi film</small>
     </div>
@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <input type="number" name="harga_tiket" min="0" class="form-control" required value="<?= htmlspecialchars($film['harga_tiket']) ?>">
         </div>
         <button type="submit" class="btn btn-success">Perbarui</button>
-        <a href="/view/index.php" class="btn btn-secondary ms-2">Kembali</a>
+        <a href="view/index.php" class="btn btn-secondary ms-2">Kembali</a>
       </form>
     </div>
   </div>

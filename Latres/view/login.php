@@ -20,31 +20,12 @@ unset($_SESSION['error'], $_SESSION['success']);
             box-sizing: border-box;
             padding: 15px;
         }
-        .left-col {
-            background-color: #f8f9fa; /* mirip bg-light */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 15px;
-            height: 100%;
-            min-height: 460px;
-        }
-        .right-col {
-            padding: 30px 20px;
-        }
-        /* Membuat container dan row memenuhi tinggi minimal */
-        .container, .row {
-            max-width: 900px;
-            margin-top: 3rem;
-        }
-        .row.shadow {
-            min-height: 460px;
-        }
+
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="row shadow rounded">
+<div class="container mt-5" style="max-width: 900px;">
+    <div class="row shadow rounded" style="min-height: 460px;">
         <div class="col-md-6 d-none d-md-flex left-col">
             <img src="film.jpg" alt="Film strip" class="login-image">
         </div>
@@ -66,9 +47,8 @@ unset($_SESSION['error'], $_SESSION['success']);
                     <label for="password" class="form-label">Password</label>
                     <input type="password" name="password" id="password" required class="form-control">
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
-                <a href="register.php" class="btn btn-secondary ms-2">Register</a>
-                <small class="d-block mt-3 pd-15">Belum punya akun? <a href="register.php" class="btn" data-bs-toggle="button">Daftar di sini</a><br>
+                <button type="submit" class="btn btn-dark">Login</button>
+                <small class="d-block mt-3 pd-15">Belum punya akun? <a href="register.php" class="link-underline-light text-dark">Daftar di sini</a><br>
                         default admin/admin       
                 </small>
             </form>

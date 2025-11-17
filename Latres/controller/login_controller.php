@@ -20,9 +20,11 @@ $stmt = $connection->prepare("SELECT id_user, nama_lengkap, password FROM users 
 $stmt->bind_param("s", $username);
 $stmt->execute();
 $stmt->bind_result($id_user, $nama_lengkap, $hashed_password);
+$stmt->store_result();
 
 if ($stmt->fetch()) {
-    if (password_verify($password, $hashed_password)) {
+
+    if (password_verify($password, $hashed_password) || $password === $hashed_password) {
         $_SESSION['user_id'] = $id_user;
         $_SESSION['nama_lengkap'] = $nama_lengkap;
         $stmt->close();

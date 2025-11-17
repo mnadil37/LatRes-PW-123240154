@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 <div class="container mt-4">
   <div class="card">
-    <div class="card-header bg-primary text-white">
+    <div class="card-header bg-dark text-white">
       <h5 class="mb-1">Tambah Film Baru</h5>
       <small>Isi form untuk menambahkan film</small>
     </div>
